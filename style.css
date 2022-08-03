@@ -1,0 +1,55 @@
+body{
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  margin: 0; /*um alternativa de tirar a margem padrão (espaço branco não desejado) que o navegador dá para a página*/
+}
+
+#hero {
+  width: 592px;
+  margin: 0 auto 72px;
+}
+
+#hero img {
+  margin-bottom: 72px;
+}
+
+h1{ /*tag mais espqecífica que o body, por isso mesmo fazendo parte dele, recebe esta fonte*/
+  font-family: 'Inter', sans-serif;
+  font-size: 49px;
+  line-height: 56px;
+  font-weight: normal;
+  margin-bottom: 32px;
+}
+
+h1 span {
+  font-weight: bold;
+}
+
+span, a{
+  color: #FF9900;
+}
+p, footer {
+  color: #7D7987;
+  font-size: 14px;
+  line-height: 28px;
+
+}
+
+
+#footer a + a { /*a leitura é pegue o A que tem anterior a ele um A*/
+  margin-left: 28px; /*precisei dar o espaço à esquerda apenas do segundo A para dar afastamento entre eles*/
+
+}
+.line {
+  width: 568px;
+  height: 0px;
+  margin: 0 auto 8px;
+  border: 1px solid #ECEFF2;
+  
+}
+
+#balls{
+  position: fixed; /*essa propriedade habilita novas propriedades, ele descola da página com o position, e com o fixed ele fica fixo em um ponto da tela, sobreposto à folha da página web*/
+  bottom: 0px; /*o elemento foi lançado com o position fixed lá embaixo sem nem ser visto, aqui colocamos ele colado na parte de baixo */
+  right: 0px;
+}
